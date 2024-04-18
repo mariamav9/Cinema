@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+#films {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+}
+
+#searchbar{
+  border: none;
+  padding:12px;
+  border-radius: 10px;
+  position: absolute;
+  margin-left: 75%;
+  margin-right: 15%;
+  color: #303030;
+}
+
+#films .film {
+  margin: 10px;
+  padding: 10px;
+  width: 280px;
+  min-height: 490px;
+  text-align: center;
+  border: 4px solid aliceblue;
+  border-radius: 60px;
+  opacity: 0.9;
+}
+
+#films .film p {
+  color: aliceblue;
+  font-size: 18px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+#films .film .film-img {
+  width: 240px;
+  height: 360px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+#films .film .divForTimes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#films .film .divForTimes a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 2px 5px;
+  width: 110px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#films .film .divForTimes a span {
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+}
+
+#films .film .divForTimes a:hover {
+  background-color: #A8A8A8;
+}
+
+h3{
+  color: aliceblue;
+  margin: 32px 0px 10px;
+}
+
+.cinemaLink{
+  font-size: 50px;
+}
+
+
+
+.index {
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.index a {
+  height: 50px;
+  width: 100px;
+  
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+ 
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.index a:hover {
+  background-color: #A8A8A8;
+}
+
+.index .gotofilms {
+  width: 140px;
+  height: 60px;
+  padding: 10px;
+}
+
+.signup,
+.signin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  font-size: 20px;
+}
+
+
+.signup form,
+.signin form {
+  
+  font-size: 30px; display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+ 
+  font-weight: bold;
+ 
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.signup form label,
+.signin form label {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+  width: 100%;
+}
+
+.signup form input[type="text"],
+.signup form input[type="password"],
+.signin form input[type="text"],
+.signin form input[type="password"] {
+  border: none;
+  border-radius: 20px;
+  padding: 0px 10px;
+  width: 250px;
+  height: 37px;
+  margin-top: 15px;
+}
+
+.signup form input[type="submit"],
+.signin form input[type="submit"] {
+  height: 60px;
+  width: 170px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #A8A8A8;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: 'Lobster', cursive;
+}
+
+.signup form input[type="submit"]:hover,
+.signin form input[type="submit"]:hover {
+  background-color: #303030;
+}
+
+.signup a,
+.signin a {
+  height: 60px;
+  width: 170px;
+  border: none;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.viewusers{
+  text-align: center;
+  height: 300px;
+}
+
+
+#seats {
+  padding-top: 20px;
+  border-top: 10px solid black;
+}
+
+#seats .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#seats .row .rowNumber {
+  width: 30px;
+  color: aliceblue;
+  font-size: 20px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+#seats .row .seat {
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  margin: 2px;
+}
+
+#book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 100px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #A8A8A8;
+  
+  border-radius: 10px;
+  margin: 20px 0px 10px 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#book:hover {
+  background-color: #303030;
+}
+
+.seatsGoBack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+
+.seatsGoBack a {
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 10px;
+}
+
+.goB{
+
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+
+
+#options {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#options a {
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: white;
+
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px;
+  padding: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#options a:hover {
+  background-color: #A8A8A8;
+}
+
+.deletereservation,
+.deletefilmimage,
+.deletescreening,
+.addnewfilm,
+.addnewimage,
+.addnewscreening {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  font-size: 20px;
+}
+
+.deletereservation a,
+.deletefilmimage a,
+.deletescreening a,
+.addnewfilm a,
+.addnewimage a,
+.addnewscreening a {
+  border: none;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.deletereservation a:hover,
+.deletefilmimage a:hover,
+.deletescreening a:hover,
+.addnewfilm a:hover,
+.addnewimage a:hover,
+.addnewscreening a:hover {
+  background-color: #A8A8A8;
+}
+
+body {
+  background-image:url(../img/woman.jpg);
+  height: 100%; 
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Lobster', cursive;
+ }
+
+
+
+
+.deletereservation form,
+.deletefilmimage form,
+.deletescreening form,
+.addnewfilm form,
+.addnewimage form,
+.addnewscreening form {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.deletereservation form label,
+.deletefilmimage form label,
+.deletescreening form label,
+.addnewfilm form label,
+.addnewimage form label,
+.addnewscreening form label {
+  margin-bottom: 15px;
+  color: white;
+  font-weight: normal;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.deletereservation form select,
+.deletereservation form input[type="text"],
+.deletereservation form input[type="date"],
+.deletereservation form input[type="time"],
+.deletefilmimage form select,
+.deletefilmimage form input[type="text"],
+.deletefilmimage form input[type="date"],
+.deletefilmimage form input[type="time"],
+.deletescreening form select,
+.deletescreening form input[type="text"],
+.deletescreening form input[type="date"],
+.deletescreening form input[type="time"],
+.addnewfilm form select,
+.addnewfilm form input[type="text"],
+.addnewfilm form input[type="date"],
+.addnewfilm form input[type="time"],
+.addnewimage form select,
+.addnewimage form input[type="text"],
+.addnewimage form input[type="date"],
+.addnewimage form input[type="time"],
+.addnewscreening form select,
+.addnewscreening form input[type="text"],
+.addnewscreening form input[type="date"],
+.addnewscreening form input[type="time"] {
+  border: 2px solid white;
+  height: 35px;
+  border-radius: 5px;
+  padding: 0px 5px;
+  width: 200px;
+}
+
+
+
+.deletereservation form input[type="file"],
+.deletefilmimage form input[type="file"],
+.deletescreening form input[type="file"],
+.addnewfilm form input[type="file"],
+.addnewimage form input[type="file"],
+.addnewscreening form input[type="file"] {
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.deletereservation form input[type="submit"],
+.deletefilmimage form input[type="submit"],
+.deletescreening form input[type="submit"],
+.addnewfilm form input[type="submit"],
+.addnewimage form input[type="submit"],
+.addnewscreening form input[type="submit"] {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: darkgray;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 13px;
+  font-family: 'Lobster', cursive;
+}
+
+.deletereservation form input[type="submit"]:hover,
+.deletefilmimage form input[type="submit"]:hover,
+.deletescreening form input[type="submit"]:hover,
+.addnewfilm form input[type="submit"]:hover,
+.addnewimage form input[type="submit"]:hover,
+.addnewscreening form input[type="submit"]:hover {
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+.top-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #A8A8A8;
+  padding: 10px;
+  opacity: 0.9;
+  border-bottom:3px  solid black;
+  font-family: 'Lobster', cursive;
+}
+
+header a,
+.top-panel a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 8px 8px 8px;
+}
+
+header a:hover,
+.top-panel a:hover {
+  color: #303030;
+}
+
+
+header .logout,
+.top-panel .logout {
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80px;
+  width: 80px;
+}
+
+
+header .adminpanel,
+.top-panel .adminpanel {
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 80px;
+  width: 80px;
+}
+
+main,
+.bottom-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  min-height: calc(100vh - 120px);
+  
+  font-size: 30px;
+}
+
+
+@media only screen and (max-width: 860px) {
+  .logout{
+    font-size: 10px;
+  }
+  .adminpanel{
+    font-size: 10px;
+  }
+  .cinemaLink{
+    font-size: 40px;
+  }
+  #searchbar{
+    width: 60px;
+    margin-right: 20%;
+  }
+}
+
+.updateselect{
+  width: 130px;
+  height: 30px;
+  font-size: 18px;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 4px 4px #ccc;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
