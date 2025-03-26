@@ -13,6 +13,6 @@
 - Admin panel for managing movies, showtimes, and bookings
 
 ##  Technologies Used
- - Frontend : JS, CSS, HTML, 
- - Backend : PHP,
+ - Frontend : JS, CSS, HTML
+ - Backend : PHP
  - Database: SQL
